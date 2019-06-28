@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Charlie Boy Labs"
+date:   2019-06-08 17:46:28 -0400
+meta: Charlie Boy is a CBD company out of Jacksonville
+categories: print
+thumbnail: darkarts.svg
+color: 6ca9a2
+modal: modal-1
+---
+# hello world

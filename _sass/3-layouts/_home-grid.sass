@@ -1,0 +1,42 @@
+body
+  a
+    text-decoration: none
+  .HomePage
+    +flex()
+    +column()
+    height: 100vh
+    &-content
+      height: 50%
+      width: 100%
+      display: block
+      @media (min-width: 950px)
+        display: flex
+        height: 100vh
+    &-cell
+      +center()
+      +flex()
+      -moz-box-flex: 1
+      -ms-flex: 1
+      flex: 1
+      -moz-box-pack: center
+      -ms-flex-pack: center
+      justify-content: center
+      position: relative
+      height: 50vh
+      &:hover
+        .Block-textBlock
+          -webkit-transform: scale(1.5)
+          transform: scale(1.5)
+          -webkit-transform-origin: center center
+          transform-origin: center center
+          +transition(0.5s)
+      @media (min-width: 950px)
+        display: flex
+        height: 100vh
+    &-Block1
+      background-image: url("http://brandandwebdesigns.com/forfun/creative.jpg")
+      background-size: 100vw 50vh
+      @media (min-width: 950px)
+        background-size: 100vw 100vh
+    &-Block2
+      background-color: $coder-gray

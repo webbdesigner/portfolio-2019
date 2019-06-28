@@ -1,0 +1,25 @@
+
+
+<div class="portfolio" id="creative">
+  {% for portfolio in site.categories.print %}
+  <a class="portfolio-item" href="#{{ portfolio.modal }}" style="background-color: #{{ portfolio.color }} " >
+    <div class="portfolio-image" style="background-image: url( /assets/img/print/{{ portfolio.thumbnail }} )">
+      <div class="portfolio-image-content">
+        <h2>{{portfolio.title}}</h2>
+        <p>{{portfolio.meta}}</p>
+      </div>
+    </div>
+  </a>
+  <div class="modal" id="{{ portfolio.modal }}" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+         <a class="close" href="#close"></a>
+      </div>
+        <h3>{{portfolio.title}}</h3>
+        <p>{{portfolio.meta}}</p>
+        {{portfolio.content}}
+
+    </div>
+  </div>
+  {% endfor %}
+</div>

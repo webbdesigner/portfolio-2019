@@ -1,0 +1,57 @@
+.modal
+  &::before
+    content: ""
+    display: none
+    position: fixed
+    z-index: 100
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background-color: $dark-gray
+    background-color: hsla(233, 12%, 13%, .999)
+  &-dialog
+    position: absolute
+    text-align: center
+    color: $white
+    z-index: 2000
+    left: 0
+    right: 0
+    top: -100%
+    width: 100vw
+    -webkit-transform: translate(0, -300%)
+    -ms-transform: translate(0, -300%)
+    transform: translate(0, -300%)
+    -moz-transition: all .3s ease-out 0s
+    -webkit-transition: all .3s ease-out 0s
+    -o-transition: all .3s ease-out 0s
+    transition: all .3s ease-out 0s
+    h3
+      font-size: 2.5rem
+      padding-bottom: 0
+      margin: 0
+    .modal-header
+      padding: 25px
+      .close
+        &::before
+          position: absolute
+          content: url(../img/close.svg)
+          height: 30px
+          width: 30px
+          cursor: pointer
+          display: block
+          z-index: 10000
+          right: 25px
+          top: 0
+  .modal-body
+    padding-top: 1em
+    padding-bottom: 1em
+    font-size: 1em
+  &:target
+    &::before
+      display: block
+    .modal-dialog
+      top: 10%
+      -webkit-transform: translate(0, 0)
+      -ms-transform: translate(0, 0)
+      transform: translate(0, 0)

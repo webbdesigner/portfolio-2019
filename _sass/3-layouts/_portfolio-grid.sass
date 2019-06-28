@@ -1,0 +1,43 @@
+
+.portfolio
+  margin-top: 65px
+  +flex()
+  flex-wrap: wrap
+  flex-direction: row
+  a.portfolio-item
+    padding: 0
+    margin: 0
+    height: 450px
+    flex: 1 1 calc(100%)
+    background-color: orange
+    @media (min-width: 950px)
+      flex: 1 1 calc(100% / 2)
+    .portfolio-image
+      display: flex
+      justify-content: center
+      align-items: baseline
+      width: 100%
+      height: 100%
+      background-repeat: no-repeat
+      background-position: center
+      &-content
+        width: 100%
+        background-color: $dark-gray
+        background-color: hsla(233, 12%, 13%, .9)
+        padding: 20px 30px
+        position: relative
+        top: 100%
+        transform: translateY(-100%)
+        display: block
+        opacity: 0
+        line-height: .5em
+        color: white
+        text-align: left
+        +transition(.45s)
+        h2
+          font-size: 1.3rem
+        p
+          font-size: 1rem
+    &:hover
+      .portfolio-image-content
+        opacity: 1

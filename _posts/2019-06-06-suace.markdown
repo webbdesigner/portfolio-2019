@@ -1,0 +1,11 @@
+---
+layout: post
+title:  "Sauce logo"
+date:   2019-06-08 17:46:28 -0400
+meta: Sauce is a DJ from Eastern North Carolina
+categories: print
+thumbnail: sauce.svg
+color: ffd4ca
+modal: modal-5
+---
+#hello world

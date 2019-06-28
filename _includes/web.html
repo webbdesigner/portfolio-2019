@@ -1,0 +1,12 @@
+<div class="portfolio">
+  {% for portfolio in site.categories.web %}
+  <a class="portfolio-item" target="_blank" href="{{ portfolio.url }}" style="background-color: #{{ portfolio.color }} " >
+    <div class="portfolio-image" style="background-image: url( /assets/img/web/{{ portfolio.thumbnail }} )">
+      <div class="portfolio-image-content">
+        <h2>{{portfolio.title}}</h2>
+        <p>{{portfolio.meta}}</p>
+      </div>
+    </div>
+  </a>
+  {% endfor %}
+</div>

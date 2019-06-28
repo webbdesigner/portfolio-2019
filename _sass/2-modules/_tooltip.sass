@@ -1,0 +1,38 @@
+.tooltip
+  &:before
+    position: absolute
+    text-align: center
+    z-index: 2
+    display: none
+    width: 200px
+    max-width: 200px
+    padding: 10px
+    font-size: 1rem
+    line-height: 1.4
+    border-radius: 5px
+    background-color: rgba(0, 0, 0, 0.8)
+    color: white
+    content: attr(title)
+  &:after
+    position: absolute
+    z-index: 1
+    display: none
+    width: 0
+    height: 0
+    border: 5px solid transparent
+    content: ""
+  &:hover:before,
+  &:hover:after
+    display: inline-block
+
+.top
+  &:before
+    bottom: calc(30% + 5px)
+    left: 50%
+    transform: translateX(-50%)
+  &:after
+    bottom: 100%
+    left: 50%
+    transform: translateX(-50%)
+    border-bottom-width: 0
+    border-top-color: rgba(0, 0, 0, 0.8)

@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Brand and Web Designs | The portfolio of Brandon Webb</title>
+<!-- FAVICON -->
+<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- CSS -->
+<link href="/assets/css/styles.css" type="text/css" rel="stylesheet">
+  <!-- Font Awesome -->
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+
+<header>
+  <div class="header-wrap">
+    <!-- Logo -->
+    <a href="index.html" class="logo">
+      <img src="http://brandandwebdesigns.com/forfun/logo.png"/>
+      <h1>Brand & Web Designs</h1>
+    </a>
+
+    <nav>
+      <!-- Hamburger -->
+      <button id="hamburger-icon" href="#" class="open-close-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Overlay Menu -->
+      <div id="myNav" class="overlay">
+        <div class="overlay-content">
+          <ul>
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Hire Me</a></li>
+            <li>
+              <ul class="list-inline">
+                <li><a target="_blank" href="https://www.facebook.com/brandon.webb.7399"><i class="fab fa-facebook fa-fw fa-3x"></i></a></li>
+                <li><a target="_blank" href="https://twitter.com/webbdesigning"><i class="fab fa-twitter fa-fw fa-3x"></i></a></li>
+                <li><a target="_blank" href="https://www.instagram.com/webbdesigner3"><i class="fab fa-instagram fa-fw fa-3x"></i></a></li>
+                <li><a target="_blank" href="https://www.codepen.io/webbdesigner3"><i class="fab fa-codepen fa-fw fa-3x"></i></a></li>
+                <li><a target="_blank" href="https://github.com/webbdesigner"><i class="fab fa-github fa-fw fa-3x"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+          <p>© 2019 Copyright Brand and Web Designs. All rights reserved.
+          <br>This site is built with <a target="_blank" href="https://jekyllrb.com/">Jekyll</a> and <a target="_blank" href="https://gulpjs.com/">Gulp.js</a>. The source code is hosted on Github.</p>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+<div class="HomePage">
+  <div class="HomePage-content">
+
+    <!-- Creative Block -->
+    <a href="portfolio.html/#creative" class="HomePage-cell HomePage-Block1 tooltip top" title="View My Design Portfolio">
+      <div class="Block-textBlock">
+          <h2 class="BlockTitle creative">Creative</h2>
+      </div>
+    </a>
+
+    <!-- Coder Block -->
+    <a href="portfolio.html/#web" class="HomePage-cell HomePage-Block2 tooltip top" title="View My Web Portfolio">
+      <div class="Block-textBlock">
+        <h2 class="BlockTitle coder">/Coder</h2>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<!-- Navigation Javascript -->
+<script>
+/* Open Menu */
+$( ".open-close-btn" ).on('click touchstart', function(e) {
+  // prevent default anchor click
+  e.preventDefault();
+  $(".overlay").toggleClass("overlay-open");
+  $("#hamburger-icon").toggleClass("hamburger-open");
+});
+
+
+(function($) { "use strict";
+
+	$(document).ready(function(){"use strict";
+
+		//Scroll back to top
+
+		var progressPath = document.querySelector('.progress-wrap path');
+		var pathLength = progressPath.getTotalLength();
+		progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+		progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+		progressPath.style.strokeDashoffset = pathLength;
+		progressPath.getBoundingClientRect();
+		progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+		var updateProgress = function () {
+			var scroll = $(window).scrollTop();
+			var height = $(document).height() - $(window).height();
+			var progress = pathLength - (scroll * pathLength / height);
+			progressPath.style.strokeDashoffset = progress;
+		}
+		updateProgress();
+		$(window).scroll(updateProgress);
+		var offset = 50;
+		var duration = 550;
+		jQuery(window).on('scroll', function() {
+			if (jQuery(this).scrollTop() > offset) {
+				jQuery('.progress-wrap').addClass('active-progress');
+			} else {
+				jQuery('.progress-wrap').removeClass('active-progress');
+			}
+		});
+		jQuery('.progress-wrap').on('click', function(event) {
+			event.preventDefault();
+			jQuery('html, body').animate({scrollTop: 0}, duration);
+			return false;
+		})
+
+
+	});
+
+})(jQuery);
+</script>
+
+
+</body>
