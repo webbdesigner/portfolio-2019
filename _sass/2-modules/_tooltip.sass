@@ -1,5 +1,5 @@
 .tooltip
-  &:before
+  &::before
     position: absolute
     text-align: center
     z-index: 2
@@ -13,7 +13,7 @@
     background-color: rgba(0, 0, 0, 0.8)
     color: white
     content: attr(title)
-  &:after
+  &::after
     position: absolute
     z-index: 1
     display: none
@@ -26,13 +26,7 @@
     display: inline-block
 
 .top
-  &:before
+  &::before
     bottom: calc(30% + 5px)
     left: 50%
     transform: translateX(-50%)
-  &:after
-    bottom: 100%
-    left: 50%
-    transform: translateX(-50%)
-    border-bottom-width: 0
-    border-top-color: rgba(0, 0, 0, 0.8)
