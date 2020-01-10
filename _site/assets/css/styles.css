@@ -273,7 +273,7 @@ header .header-wrap {
   font-size: 1rem;
   line-height: 1.4;
   border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: #1e1f26;
   color: white;
   content: attr(title); }
 .tooltip::after {
@@ -289,6 +289,12 @@ header .header-wrap {
 
 .top::before {
   bottom: calc(30% + 5px);
+  left: 50%;
+  transform: translateX(-50%); }
+
+.bottom::before {
+  background-color: #272c34;
+  bottom: 20%;
   left: 50%;
   transform: translateX(-50%); }
 
@@ -469,16 +475,16 @@ body .HomePage {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row; }
-  .portfolio a.portfolio-item {
+  .portfolio .portfolio-item {
     padding: 0;
     margin: 0;
     height: 450px;
     flex: 1 1 calc(100%);
     background-color: orange; }
     @media (min-width: 950px) {
-      .portfolio a.portfolio-item {
+      .portfolio .portfolio-item {
         flex: 1 1 calc(100% / 2); } }
-    .portfolio a.portfolio-item .portfolio-image {
+    .portfolio .portfolio-item .portfolio-image {
       display: flex;
       justify-content: center;
       align-items: baseline;
@@ -486,7 +492,7 @@ body .HomePage {
       height: 100%;
       background-repeat: no-repeat;
       background-position: center; }
-      .portfolio a.portfolio-item .portfolio-image-content {
+      .portfolio .portfolio-item .portfolio-image-content {
         width: 100%;
         background-color: #1e1f26;
         background-color: rgba(29, 30, 37, 0.9);
@@ -503,9 +509,214 @@ body .HomePage {
         -moz-transition: 0.45s ease-in-out;
         -o-transition: 0.45s ease-in-out;
         transition: 0.45s ease-in-out; }
-        .portfolio a.portfolio-item .portfolio-image-content h2 {
+        .portfolio .portfolio-item .portfolio-image-content h2 {
           font-size: 1.3rem; }
-        .portfolio a.portfolio-item .portfolio-image-content p {
+        .portfolio .portfolio-item .portfolio-image-content p {
           font-size: 1rem; }
-    .portfolio a.portfolio-item:hover .portfolio-image-content {
+    .portfolio .portfolio-item:hover .portfolio-image-content {
       opacity: 1; }
+
+.Preview {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  display: block;
+  font-size: 12px;
+  max-width: 500px;
+  margin: auto;
+  padding-top: 20px; }
+  .Preview__meta {
+    margin: 10px 0; }
+    .Preview__meta:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .Preview__meta__title {
+      float: left; }
+    .Preview__meta__date {
+      float: right;
+      opacity: 0.5; }
+  .Preview__fig {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 auto; }
+  .Preview .Imgset {
+    transition: -webkit-transform 0.4s;
+    transition: transform 0.4s;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+  .Preview__actions {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center; }
+  .Preview__action {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    background-position: center 30%;
+    background-repeat: no-repeat;
+    width: calc(50% - 15px);
+    box-shadow: 0 1px 40px 0 rgba(0, 0, 0, 0.15);
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: opacity;
+    transition: -webkit-transform 0.4s, opacity 0.4s;
+    transition: transform 0.4s, opacity 0.4s;
+    opacity: 0;
+    background-position: center center; }
+    .Preview__action--globe {
+      left: 10px;
+      background-color: #272c34;
+      background-image: url("../img/internet.svg");
+      background-size: 65px; }
+    .Preview__action--eye {
+      right: 10px;
+      background-color: #272c34;
+      background-image: url("../img/view.svg");
+      background-size: 65px; }
+  .Preview:hover .Preview__action {
+    opacity: 1; }
+  .Preview:hover .Imgset {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    transition-duration: 10s; }
+
+[data-component="Browser"] {
+  padding: 2em; }
+
+.Browser {
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.07);
+  font-size: 11px; }
+
+.Browser__chrome {
+  display: block;
+  height: 13px;
+  background-color: #242424;
+  position: relative; }
+
+.Browser__dots {
+  display: block;
+  top: 5px;
+  left: 6px; }
+
+.Browser__dots,
+.Browser__dots:before,
+.Browser__dots:after {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%; }
+
+.Browser__dots {
+  background-color: #fc625d; }
+
+.Browser__dots:before {
+  background-color: #fec041; }
+
+.Browser__dots:after {
+  background-color: #32ca47; }
+
+.Browser__dots:before {
+  content: "";
+  top: 0;
+  left: 7px; }
+
+.Browser__dots:after {
+  content: "";
+  top: 0;
+  left: 14px; }
+
+.Browser__fig {
+  position: relative;
+  padding-bottom: 62.5%;
+  background-color: #eee; }
+
+.Browser__title {
+  color: #fff;
+  padding: 4px 48px 3px 48px;
+  line-height: 1.5;
+  font-size: 12px;
+  display: block;
+  text-align: center;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis; }
+
+.Browser--large {
+  border-radius: 8px 8px 0 0; }
+
+.Browser--large .Browser__chrome {
+  height: 25px;
+  border-radius: 8px 8px 0 0; }
+
+.Browser--large .Browser__dots {
+  display: block;
+  top: 10px;
+  left: 9px; }
+
+.Browser--large .Browser__dots,
+.Browser--large .Browser__dots:before,
+.Browser--large .Browser__dots:after {
+  width: 6px;
+  height: 6px; }
+
+.Browser--large .Browser__dots:before {
+  left: 12px; }
+
+.Browser--large .Browser__dots:after {
+  left: 24px; }
+
+.Browser--onDark {
+  box-shadow: 0 2px 30px #000; }
+
+.Imgset {
+  display: block;
+  position: relative;
+  padding: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0); }
+
+.Imgset__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0; }
+
+.Imgset__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: opacity 0.5s;
+  opacity: 0; }
+
+.Imgset--fillParent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0 !important; }
+
+.Imgset.is-loaded .Imgset__background {
+  opacity: 1; }
