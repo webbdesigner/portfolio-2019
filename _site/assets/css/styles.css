@@ -516,7 +516,7 @@ body .HomePage {
     .portfolio .portfolio-item:hover .portfolio-image-content {
       opacity: 1; }
 
-.Preview {
+.preview {
   -webkit-transform: translateZ(0);
   transform: translateZ(0);
   display: block;
@@ -524,36 +524,36 @@ body .HomePage {
   max-width: 500px;
   margin: auto;
   padding-top: 20px; }
-  .Preview__meta {
+  .preview__meta {
     margin: 10px 0; }
-    .Preview__meta:after {
+    .preview__meta:after {
       content: "";
       display: table;
       clear: both; }
-    .Preview__meta__title {
+    .preview__meta__title {
       float: left; }
-    .Preview__meta__date {
+    .preview__meta__date {
       float: right;
       opacity: 0.5; }
-  .Preview__fig {
+  .preview__fig {
     position: relative;
     overflow: hidden;
     width: 100%;
     margin: 0 auto; }
-  .Preview .Imgset {
+  .preview .imgset {
     transition: -webkit-transform 0.4s;
     transition: transform 0.4s;
     -webkit-transform: scale(1);
     -ms-transform: scale(1);
     transform: scale(1); }
-  .Preview__actions {
+  .preview__actions {
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
     text-align: center; }
-  .Preview__action {
+  .preview__action {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     position: absolute;
@@ -570,116 +570,99 @@ body .HomePage {
     transition: transform 0.4s, opacity 0.4s;
     opacity: 0;
     background-position: center center; }
-    .Preview__action--globe {
+    .preview__action--globe {
       left: 10px;
       background-color: #272c34;
       background-image: url("../img/internet.svg");
       background-size: 65px; }
-    .Preview__action--eye {
+    .preview__action--eye {
       right: 10px;
       background-color: #272c34;
       background-image: url("../img/view.svg");
       background-size: 65px; }
-  .Preview:hover .Preview__action {
+  .preview:hover .preview__action {
     opacity: 1; }
-  .Preview:hover .Imgset {
+  .preview:hover .imgset {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     transition-duration: 10s; }
 
-[data-component="Browser"] {
+[data-component="browser"] {
   padding: 2em; }
 
-.Browser {
+.browser {
   border-radius: 5px 5px 0 0;
+  margin: 20px;
   overflow: hidden;
   box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.07);
   font-size: 11px; }
+  .browser__chrome {
+    display: block;
+    height: 13px;
+    background-color: #242424;
+    position: relative; }
+  .browser__dots {
+    display: block;
+    top: 5px;
+    left: 6px;
+    background-color: #fc625d; }
+    .browser__dots:before {
+      background-color: #fec041;
+      content: "";
+      top: 0;
+      left: 7px; }
+    .browser__dots:after {
+      background-color: #32ca47;
+      content: "";
+      top: 0;
+      left: 14px; }
+  .browser__fig {
+    position: relative;
+    padding-bottom: 62.5%;
+    background-color: #eee; }
+  .browser__title {
+    color: #fff;
+    padding: 4px 48px 3px 48px;
+    line-height: 1.5;
+    font-size: 12px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis; }
+  .browser--onDark {
+    box-shadow: 0 2px 30px #000; }
+  .browser--large {
+    border-radius: 8px 8px 0 0; }
+    .browser--large .browser__chrome {
+      height: 25px;
+      border-radius: 8px 8px 0 0; }
+    .browser--large .browser__dots {
+      display: block;
+      top: 10px;
+      left: 9px; }
+    .browser--large .browser__dots:before {
+      left: 12px; }
+    .browser--large .browser__dots:after {
+      left: 24px; }
 
-.Browser__chrome {
-  display: block;
-  height: 13px;
-  background-color: #242424;
-  position: relative; }
-
-.Browser__dots {
-  display: block;
-  top: 5px;
-  left: 6px; }
-
-.Browser__dots,
-.Browser__dots:before,
-.Browser__dots:after {
+.browser__dots,
+.browser__dots:before,
+.browser__dots:after {
   position: absolute;
   width: 4px;
   height: 4px;
   border-radius: 100%; }
 
-.Browser__dots {
-  background-color: #fc625d; }
-
-.Browser__dots:before {
-  background-color: #fec041; }
-
-.Browser__dots:after {
-  background-color: #32ca47; }
-
-.Browser__dots:before {
-  content: "";
-  top: 0;
-  left: 7px; }
-
-.Browser__dots:after {
-  content: "";
-  top: 0;
-  left: 14px; }
-
-.Browser__fig {
-  position: relative;
-  padding-bottom: 62.5%;
-  background-color: #eee; }
-
-.Browser__title {
-  color: #fff;
-  padding: 4px 48px 3px 48px;
-  line-height: 1.5;
-  font-size: 12px;
-  display: block;
-  text-align: center;
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis; }
-
-.Browser--large {
-  border-radius: 8px 8px 0 0; }
-
-.Browser--large .Browser__chrome {
-  height: 25px;
-  border-radius: 8px 8px 0 0; }
-
-.Browser--large .Browser__dots {
-  display: block;
-  top: 10px;
-  left: 9px; }
-
-.Browser--large .Browser__dots,
-.Browser--large .Browser__dots:before,
-.Browser--large .Browser__dots:after {
+.browser--large .browser__dots,
+.browser--large .browser__dots:before,
+.browser--large .browser__dots:after {
   width: 6px;
   height: 6px; }
 
-.Browser--large .Browser__dots:before {
-  left: 12px; }
-
-.Browser--large .Browser__dots:after {
-  left: 24px; }
-
-.Browser--onDark {
-  box-shadow: 0 2px 30px #000; }
-
-.Imgset {
+.imgset {
   display: block;
   position: relative;
   padding: 0;
@@ -689,34 +672,30 @@ body .HomePage {
   margin-right: 0 !important;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
-
-.Imgset__img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0; }
-
-.Imgset__background {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: opacity 0.5s;
-  opacity: 0; }
-
-.Imgset--fillParent {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  padding-bottom: 0 !important; }
-
-.Imgset.is-loaded .Imgset__background {
-  opacity: 1; }
+  .imgset__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; }
+  .imgset__background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: opacity 0.5s;
+    opacity: 0; }
+  .imgset--fillParent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 0 !important; }
+  .imgset.is-loaded .imgset__background {
+    opacity: 1; }
