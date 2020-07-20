@@ -6,5 +6,6 @@ meta: this is the description
 categories: web
 thumbnail: ecu4nchealth.jpg
 color: 2C3E50
+link: https://ecu4nchealth.ecu.edu/
 ---
 # hello world

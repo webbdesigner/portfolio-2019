@@ -515,6 +515,8 @@ body .HomePage {
           font-size: 1rem; }
     .portfolio .portfolio-item:hover .portfolio-image-content {
       opacity: 1; }
+    .portfolio .portfolio-item.web {
+      height: auto; }
 
 .preview {
   -webkit-transform: translateZ(0);

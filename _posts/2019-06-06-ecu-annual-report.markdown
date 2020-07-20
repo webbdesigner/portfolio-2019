@@ -6,5 +6,6 @@ meta: this is the description
 categories: web
 thumbnail: annual.jpg
 color: 2C3E50
+link: http://www2.ecu.edu/FoundationsAnnualReport/
 ---
 # hello world

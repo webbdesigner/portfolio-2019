@@ -6,5 +6,6 @@ meta: this is the description
 categories: web
 thumbnail: rise29.jpg
 color: 2C3E50
+link: https://rise29.ecu.edu/
 ---
 # hello world

@@ -6,5 +6,6 @@ meta: this is the description
 categories: web
 thumbnail: leahriddell.jpg
 color: 2C3E50
+link: https://leahriddellcounseling.com/
 ---
 # hello world
