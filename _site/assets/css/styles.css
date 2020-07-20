@@ -587,13 +587,15 @@ body .HomePage {
     -ms-transform: scale(1.1);
     transform: scale(1.1);
     transition-duration: 10s; }
+  .preview#web-preview {
+    max-width: 700px; }
 
 [data-component="browser"] {
   padding: 2em; }
 
 .browser {
-  border-radius: 5px 5px 0 0;
   margin: 20px;
+  border-radius: 5px 5px 0 0;
   overflow: hidden;
   box-shadow: 0px 2px 6px 1px rgba(0, 0, 0, 0.07);
   font-size: 11px; }
