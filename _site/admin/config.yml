@@ -1,3 +1,5 @@
 backend:
   name: github
   repo: webbdesigner/portfolio-2019
+
+media_folder: "assets/img"
