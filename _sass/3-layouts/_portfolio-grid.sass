@@ -76,7 +76,7 @@
     transform: scale(1)
   &__actions
     position: absolute
-    top: 0
+    top: 50%
     right: 0
     bottom: 0
     left: 0
@@ -90,12 +90,7 @@
     background-position: center 30%
     background-repeat: no-repeat
     width: calc(50% - 15px)
-    box-shadow: 0 1px 40px 0 rgba(0, 0, 0, 0.15)
-    -webkit-transform: translateZ(0)
-    transform: translateZ(0)
-    will-change: opacity
-    transition: -webkit-transform 0.4s, opacity 0.4s
-    transition: transform 0.4s, opacity 0.4s
+    box-shadow: 0 1px 40px 0 rgba(0, 0, 0, 0.15)ß
     opacity: 0
     background-position: center center
     &--globe
@@ -111,11 +106,6 @@
   &:hover
     .preview__action
       opacity: 1
-    .imgset
-      -webkit-transform: scale(1.1)
-      -ms-transform: scale(1.1)
-      transform: scale(1.1)
-      transition-duration: 10s
   &#web-preview
     max-width: 700px
 
