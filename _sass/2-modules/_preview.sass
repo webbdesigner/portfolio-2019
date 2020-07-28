@@ -1,0 +1,62 @@
+.preview
+  -webkit-transform: translateZ(0)
+  transform: translateZ(0)
+  display: block
+  font-size: 12px
+  max-width: 500px
+  margin: auto
+  padding-top: 20px
+  &__meta
+    margin: 10px 0
+    text-align: center
+    &:after
+      content: ""
+      display: table
+      clear: both
+  &__fig
+    position: relative
+    overflow: hidden
+    width: 100%
+    margin: 0 auto
+  .imgset
+    transition: -webkit-transform 0.4s
+    transition: transform 0.4s
+    -webkit-transform: scale(1)
+    -ms-transform: scale(1)
+    transform: scale(1)
+  &__actions
+    position: absolute
+    top: 50%
+    right: 0
+    bottom: 0
+    left: 0
+    text-align: center
+  &__action
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    position: absolute
+    top: 10px
+    bottom: 10px
+    background-position: center 75%
+    background-repeat: no-repeat
+    width: calc(50% - 15px)
+    box-shadow: 0 1px 40px 0 rgba(0, 0, 0, 0.15)ß
+    opacity: 0
+    text-align: center
+    font-size: 1.125rem
+    line-height: 1.4
+    color: white
+    background-size: $icon-size
+    background-color: $coder-gray
+    padding-top: 5%
+    &--globe
+      left: 10px
+      background-image: url("../img/internet.svg")
+    &--eye
+      right: 10px
+      background-image: url('../img/view.svg')
+  &:hover
+    .preview__action
+      opacity: 1
+  &#web-preview
+    max-width: 700px

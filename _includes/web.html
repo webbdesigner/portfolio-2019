@@ -1,6 +1,6 @@
 <div class="portfolio" id="web">
   {% for portfolio in site.categories.web %}
-  <div class="portfolio-item web" style="background-color:#{{ portfolio.color }};">
+  <div class="portfolio-item web" style="background-color:#272c34">
   <article class="preview" id="web-preview" >
     <div class="browser">
     <div class="browser__chrome ">
@@ -11,9 +11,11 @@
         <span class="imgset is-loaded is-loaded">
           <span class="imgset__background" style="background-image: url( /assets/img/web/{{ portfolio.thumbnail }} )">
             <div class="preview__actions ">
-              <a href="{{ portfolio.link }}" target="_blank" class="tooltip web-tip preview__action preview__action--globe" title="Visit Website" >
+              <a href="{{ portfolio.link }}" target="_blank" class="preview__action preview__action--globe" title="Visit Website" >
+                View Website
               </a>
-              <a href="{{ portfolio.url }}" class="tooltip web-tip preview__action preview__action--eye" title="Details">
+              <a href="{{ portfolio.url }}" class="preview__action preview__action--eye" title="Details">
+                Details
               </a>
             </div>
           </span>
