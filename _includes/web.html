@@ -11,10 +11,10 @@
         <span class="imgset is-loaded is-loaded">
           <span class="imgset__background" style="background-image: url( /assets/img/web/{{ portfolio.thumbnail }} )">
             <div class="preview__actions ">
-              <a href="{{ portfolio.link }}" target="_blank" class="preview__action preview__action--globe" title="Visit Website" >
+              <a href="{{ portfolio.link }}" target="_blank" class="preview__action preview__action--globe" title="Visit {{ portfolio.title }} Website" >
                 View Website
               </a>
-              <a href="{{ portfolio.url }}" class="preview__action preview__action--eye" title="Details">
+              <a href="{{ portfolio.url }}" class="preview__action preview__action--eye" title="{{ portfolio.title }} Details">
                 Details
               </a>
             </div>

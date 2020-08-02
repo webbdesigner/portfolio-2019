@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Charlie Boy Labs"
+title:  "Dark Arts Brewing"
 date:   2019-06-08 17:46:28 -0400
-meta: Charlie Boy is a CBD company out of Jacksonville
+meta: Dark Arts is a Brewery in Greenville, NC
 categories: print
 thumbnail: darkarts.svg
 color: 6ca9a2

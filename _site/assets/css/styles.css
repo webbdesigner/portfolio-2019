@@ -404,7 +404,8 @@ header .header-wrap {
     color: white;
     background-size: 25%;
     background-color: #272c34;
-    padding-top: 5%; }
+    padding-top: 5%;
+    transition: all 0.4s; }
     .preview__action--globe {
       left: 10px;
       background-image: url("../img/internet.svg"); }
@@ -648,24 +649,25 @@ body.light .progress-wrap {
       margin: 20px; } }
   .browser__chrome {
     display: block;
-    height: 15px;
-    background-color: #e7eaed;
+    height: 18px;
+    background: white;
+    background: linear-gradient(180deg, white 0%, #e7eaed 35%, #cfd2d6 100%);
     position: relative; }
   .browser__dots {
     display: block;
-    top: 6px;
+    top: 7px;
     left: 6px;
     background-color: #fc625d; }
     .browser__dots:before {
       background-color: #fec041;
       content: "";
       top: 0;
-      left: 8px; }
+      left: 9px; }
     .browser__dots:after {
       background-color: #32ca47;
       content: "";
       top: 0;
-      left: 16px; }
+      left: 18px; }
   .browser__fig {
     position: relative;
     padding-bottom: 62.5%;
