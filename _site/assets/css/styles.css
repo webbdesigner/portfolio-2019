@@ -139,9 +139,6 @@ header .header-wrap {
         display: block;
         transition: 0.3s;
         overflow-y: auto; }
-        @media screen and (max-height: 950px) {
-          header .header-wrap nav .overlay a {
-            font-size: 20px; } }
         header .header-wrap nav .overlay a:hover, header .header-wrap nav .overlay a:focus {
           color: #ccc; }
       header .header-wrap nav .overlay p {
