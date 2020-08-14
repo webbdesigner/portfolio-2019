@@ -4,7 +4,7 @@ title:  "Rise 29"
 date:   2019-06-08 17:46:28 -0400
 meta: this is the description
 categories: web
-thumbnail: rise29.jpg
+thumbnail: rise29
 color: fffff1
 link: https://rise29.ecu.edu/
 ---

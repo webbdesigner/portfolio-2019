@@ -9,7 +9,11 @@
     <div class="browser__bd ">
       <figure class="preview__fig ">
         <span class="imgset is-loaded is-loaded">
-          <span class="imgset__background" style="background-image: url( /assets/img/web/{{ portfolio.thumbnail }} )">
+          <span class="imgset__background">
+              <picture>
+                <source srcset="/assets/img/web/{{ portfolio.thumbnail }}.webp" type="image/webp">
+                <img loading="lazy" src="/assets/img/web/{{ portfolio.thumbnail }}.jpg" alt="">
+              </picture>
             <div class="preview__actions ">
               <a href="{{ portfolio.link }}" target="_blank" class="preview__action preview__action--globe" title="Visit {{ portfolio.title }} Website" >
                 View Website

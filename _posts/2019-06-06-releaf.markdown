@@ -4,7 +4,7 @@ title:  "ReLeaf LLC"
 date:   2019-06-08 17:46:28 -0400
 meta: this is the description
 categories: web
-thumbnail: releaf.jpg
+thumbnail: releaf
 color: fffff3
 link: https://releaf.us/
 ---
