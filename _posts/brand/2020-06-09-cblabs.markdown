@@ -6,6 +6,6 @@ meta: Charlie Boy is a CBD company out of Jacksonville
 categories: print
 thumbnail: charlieboi_fullcolor.svg
 color: e8ebe4
-modal: modal-2
+permalink: "/brand/cbl"
 ---
 # hello world

@@ -6,6 +6,6 @@ meta: SDG is a disk golf team in Kinston, NC
 categories: print
 thumbnail: SDG-SHIELD_FULL.svg
 color: 222220
-modal: modal-1
+permalink: "/brand/sdg"
 ---
 # hello world

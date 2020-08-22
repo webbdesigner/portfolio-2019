@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "ECU Annual Report"
+title:  "Rise 29"
 date:   2019-06-08 17:46:28 -0400
 meta: this is the description
 categories: web
-thumbnail: annual
-color: fffffe
-link: http://www2.ecu.edu/FoundationsAnnualReport/
+thumbnail: rise29
+link: https://rise29.ecu.edu/
+permalink: "/web/rise29"
 ---
 # hello world

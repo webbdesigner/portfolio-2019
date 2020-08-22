@@ -6,6 +6,5 @@ meta: Solar Sailor is a Space Viking Metal Band from the planet Galgoron
 categories: print
 thumbnail: ss.svg
 color: 272121
-modal: modal-6
+permalink: "/brand/solarsailor"
 ---
-# hello world

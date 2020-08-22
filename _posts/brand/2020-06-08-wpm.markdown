@@ -6,6 +6,6 @@ meta: Webb Pest Management is a family owned business with over 30 years of expe
 categories: print
 thumbnail: webbpest.svg
 color: d6d6d6
-modal: modal-3
+permalink: "/brand/wpm"
 ---
 #hello world

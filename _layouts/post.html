@@ -1,3 +1,44 @@
 ---
 layout: wrapper
 ---
+
+<section title="Project: {{page.title}}">
+  <div class="portfolio-image" style="background-image: url(/assets/img/print/{{ page.thumbnail }} )">
+  </div>
+</section>
+
+<section title="{{page.title}} Project Context">
+  <h2>About The Project</h2>
+  <div class="portfolio-context">
+    <div class="brief">
+      <h3>Design Brief</h3>
+      <p>{{ page.brief }}</p>
+    </div>
+    <div class="challenges">
+      <h3>Challenges</h3>
+      <p>{{ page.challenges }}</p>
+    </div>
+    <div class="goals">
+      <h3>Goals</h3>
+      <p>{{ page.goals }}</p>
+    </div>
+  </div>
+</section>
+
+<section title="{{page.title}} Project Solution">
+  <div class="portfolio-solution">
+    <h2>Solution</h2>
+    <div class="concepts">
+      <h3>Concepts</h3>
+      <p>{{ page.concepts }}</p>
+    </div>
+    <div class="color-fonts">
+      <h3>Color/Type</h3>
+      <div>{{ page.colors }}</div>
+      <div>{{ page.type }}</div>
+    </div>
+    <div class="final">
+      <div>{{ page.mockups }}</div>
+    </div>
+  </div>
+</section>

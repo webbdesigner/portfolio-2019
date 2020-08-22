@@ -6,6 +6,6 @@ meta: Noah's Brew is a CBD Tea product made by Charlie Boy labs
 categories: print
 thumbnail: NoahsBrew.svg
 color: 188a44
-modal: modal-4
+permalink: "/brand/noahs-brew"
 ---
-#hello world
+hello world

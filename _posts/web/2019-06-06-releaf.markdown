@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Rise 29"
+title:  "ReLeaf LLC"
 date:   2019-06-08 17:46:28 -0400
 meta: this is the description
 categories: web
-thumbnail: rise29
-color: fffff1
-link: https://rise29.ecu.edu/
+thumbnail: releaf
+link: https://releaf.us/
+permalink: "/web/releaf"
 ---
 # hello world
