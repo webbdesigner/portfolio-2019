@@ -4,8 +4,11 @@ body
   .HomePage
     +flex()
     +column()
-    height: 100vh
-    margin-top: -65px
+    height: calc(100vh - 65px)
+    width: 100vw
+    overflow: hidden
+    position: relative
+    margin-top: 65px
     &-content
       height: 50%
       width: 100%
@@ -23,7 +26,7 @@ body
       -ms-flex-pack: center
       justify-content: center
       position: relative
-      height: 50vh
+      height: calc(50vh - (65px / 2))
       &:hover
         .Block-textBlock
           -webkit-transform: scale(1.5)
@@ -31,6 +34,8 @@ body
           -webkit-transform-origin: center center
           transform-origin: center center
           +transition(0.5s)
+      .Block-textBlock
+        margin-top: -70px
       @media (min-width: 950px)
         display: flex
         height: 100vh

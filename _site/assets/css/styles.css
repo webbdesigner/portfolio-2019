@@ -591,12 +591,12 @@ body.light .progress-wrap {
 
 a.HomePage-cell.HomePage-Block1.hire {
   background-size: 100vw 60vh;
-  height: 60vh;
+  height: 70vh;
   text-align: center;
   cursor: ns-resize; }
   a.HomePage-cell.HomePage-Block1.hire h2 {
     margin-top: -20px;
-    font-size: 8rem; }
+    font-size: 6.5rem; }
     @media (min-width: 950px) {
       a.HomePage-cell.HomePage-Block1.hire h2 {
         font-size: 10rem; } }
@@ -679,8 +679,11 @@ body .HomePage {
   -moz-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: 100vh;
-  margin-top: -65px; }
+  height: calc(100vh - 65px);
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  margin-top: 65px; }
   body .HomePage-content {
     height: 50%;
     width: 100%;
@@ -704,7 +707,7 @@ body .HomePage {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
-    height: 50vh; }
+    height: calc(50vh - (65px / 2)); }
     body .HomePage-cell:hover .Block-textBlock {
       -webkit-transform: scale(1.5);
       transform: scale(1.5);
@@ -714,6 +717,8 @@ body .HomePage {
       -moz-transition: 0.5s ease-in-out;
       -o-transition: 0.5s ease-in-out;
       transition: 0.5s ease-in-out; }
+    body .HomePage-cell .Block-textBlock {
+      margin-top: -70px; }
     @media (min-width: 950px) {
       body .HomePage-cell {
         display: flex;
