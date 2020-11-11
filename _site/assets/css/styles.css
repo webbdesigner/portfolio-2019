@@ -780,16 +780,17 @@ body .HomePage {
 
 a.HomePage-cell.HomePage-Block1.hire.about h1 {
   margin-top: -20px;
-  font-size: 5rem; }
+  font-size: 4.5rem; }
   @media (min-width: 950px) {
     a.HomePage-cell.HomePage-Block1.hire.about h1 {
       font-size: 8rem; } }
 a.HomePage-cell.HomePage-Block1.hire.about p {
-  margin-top: -40px;
   font-size: 1rem;
+  margin-top: 1em;
   color: white; }
   @media (min-width: 950px) {
     a.HomePage-cell.HomePage-Block1.hire.about p {
+      margin-top: -40px;
       font-size: 1.5rem; } }
 
 .about--photo {
@@ -808,6 +809,7 @@ a.HomePage-cell.HomePage-Block1.hire.about p {
     border: solid 3px white; }
 
 #about-content {
+  overflow-x: hidden;
   font-family: "VT323", monospace;
   color: #9DB8D3;
   font-size: 0.75em;
