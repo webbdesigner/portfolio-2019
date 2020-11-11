@@ -601,7 +601,7 @@ a.HomePage-cell.HomePage-Block1.hire {
   margin-top: 65px; }
   @media (min-width: 950px) {
     a.HomePage-cell.HomePage-Block1.hire {
-      line-height: 7rem; } }
+      line-height: 8rem; } }
   a.HomePage-cell.HomePage-Block1.hire h2 {
     font-size: 6.5rem; }
     @media (min-width: 950px) {
@@ -611,7 +611,7 @@ a.HomePage-cell.HomePage-Block1.hire {
     color: white; }
     @media (min-width: 950px) {
       a.HomePage-cell.HomePage-Block1.hire p {
-        margin-top: -100px; } }
+        line-height: 1rem; } }
 
 .form-col {
   width: 100%;

@@ -4,7 +4,7 @@ title:  "Dark Arts Brewing"
 date:   2019-06-08 17:46:28 -0400
 meta: Brewery in Greenville, NC
 categories: print
-thumbnail: darkarts.svg
+thumbnail: darkarts
 color: f7e7bd
 permalink: "brand/darkarts"
 ---

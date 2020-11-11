@@ -4,7 +4,7 @@ title:  "Scorpion Disk Golf"
 date:   2019-06-08 17:46:28 -0400
 meta: SDG is a disk golf team in Kinston, NC
 categories: print
-thumbnail: SDG-SHIELD_FULL.svg
+thumbnail: SDG-SHIELD_FULL
 color: 222220
 permalink: "/brand/sdg"
 ---

@@ -1,9 +1,9 @@
 
 
-<div class="portfolio" id="creative">
+<div class="portfolio" id="{{ portfolio.thumbnail }}"">
   {% for portfolio in site.categories.print %}
-  <a class="portfolio-item" href="#"  style="background-color: #{{ portfolio.color }} "> <!--aria-label="{{portfolio.title}} Details"-->
-    <div class="portfolio-image" style="background-image: url( /assets/img/print/{{ portfolio.thumbnail }} )">
+  <a class="portfolio-item" href="#{{ portfolio.thumbnail }}"  style="background-color: #{{ portfolio.color }} "> <!--aria-label="{{portfolio.title}} Details"-->
+    <div class="portfolio-image" style="background-image: url( /assets/img/print/{{ portfolio.thumbnail }}.svg )">
       <div class="portfolio-image-content">
         <h2>{{portfolio.title}}</h2>
         <p>{{portfolio.meta}}</p>

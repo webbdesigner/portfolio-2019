@@ -4,7 +4,7 @@ title:  "Webb Pest Management"
 date:   2019-06-08 17:46:28 -0400
 meta: Webb Pest Management is a family owned business with over 30 years of experience
 categories: print
-thumbnail: webbpest.svg
+thumbnail: webbpest
 color: d6d6d6
 permalink: "/brand/wpm"
 ---
