@@ -908,7 +908,7 @@ body .HomePage {
         display: flex;
         height: 100vh; } }
   body .HomePage-Block1 {
-    background-image: url("http://brandandwebdesigns.com/forfun/creative.jpg");
+    background-image: url("assets/img/creative.jpg");
     background-size: 100vw 50vh; }
     @media (min-width: 950px) {
       body .HomePage-Block1 {
