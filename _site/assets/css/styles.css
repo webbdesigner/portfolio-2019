@@ -785,7 +785,8 @@ body .HomePage {
         .portfolio .portfolio-item .portfolio-image-content h2 {
           font-size: 1.3rem; }
         .portfolio .portfolio-item .portfolio-image-content p {
-          font-size: 1rem; }
+          font-size: 1rem;
+          line-height: 1rem; }
     .portfolio .portfolio-item:hover .portfolio-image-content {
       opacity: 1; }
     .portfolio .portfolio-item.web {
