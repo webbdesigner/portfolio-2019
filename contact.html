@@ -2,7 +2,14 @@
 layout: wrapper
 title: Hire me
 ---
-<div class="form-col">
+<a href="#form" class="HomePage-cell HomePage-Block1 hire" >
+  <div class="">
+      <h2 class="BlockTitle creative">Hire Me!</h2>
+      <p>or ask a question.</p>
+  </div>
+</a>
+
+<div class="form-col" id="form">
   <form data-netlify="true" name="contact" class="form" action="/success" method="POST">
     <div class="two-cols">
       <label class="name-label"><span class="labels">Name</span>
@@ -20,3 +27,5 @@ title: Hire me
     </div>
   </form>
 </div>
+
+{% include progress.html %}
