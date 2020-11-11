@@ -720,7 +720,10 @@ body .HomePage {
       -o-transition: 0.5s ease-in-out;
       transition: 0.5s ease-in-out; }
     body .HomePage-cell .Block-textBlock {
-      margin-top: -70px; }
+      margin-top: 20px; }
+      @media (min-width: 950px) {
+        body .HomePage-cell .Block-textBlock {
+          margin-top: -70px; } }
     @media (min-width: 950px) {
       body .HomePage-cell {
         display: flex;
