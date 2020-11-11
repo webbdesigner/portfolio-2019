@@ -1,7 +1,7 @@
 <div class="portfolio" id="web">
   {% for portfolio in site.categories.web %}
   <div class="portfolio-item web" style="background-color: #272c34;">
-  <article class="preview" id="web-preview" >
+  <article class="preview web-preview" >
     <div class="browser">
     <div class="browser__chrome ">
       <span class="browser__dots"></span>
@@ -15,12 +15,13 @@
                 <img loading="lazy" src="/assets/img/web/{{ portfolio.thumbnail }}.jpg" alt="">
               </picture>
             <div class="preview__actions ">
-              <a href="{{ portfolio.link }}" target="_blank" class="preview__action preview__action--globe" title="Visit {{ portfolio.title }} Website" >
-                View Website
+              <a  rel="noopener" href="{{ portfolio.link }}" target="_blank" class="preview__action" title="Visit {{ portfolio.title }} Website" >
+                <img src="/assets/img/internet.svg" class="preview__action--globe" alt="globe logo">
+                Visit {{ portfolio.title }} Website
               </a>
-              <a href="{{ portfolio.url }}" class="preview__action preview__action--eye" title="{{ portfolio.title }} Details">
+              <!--<a href="{{ portfolio.url }}" class="preview__action preview__action--eye" title="{{ portfolio.title }} Details">
                 Details
-              </a>
+              </a>-->
             </div>
           </span>
         </span>

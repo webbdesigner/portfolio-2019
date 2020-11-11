@@ -24,7 +24,7 @@
 
 =shadow()
   text-shadow: 1px 1px #d10e31, 2px 2px #d10e31, 3px 3px #d10e31, 4px 4px #d10e31, 5px 5px #d10e31, 6px 6px #d10e31, 7px 7px #d10e31, 8px 8px #890920, 9px 9px #890920, 10px 10px #890920, 11px 11px 15px rgba(0,0,0,0.5)
-  
+
 =rotate($deg)
   -webkit-transform: rotate($deg)
   -moz-transform: rotate($deg)
@@ -36,3 +36,13 @@
   -moz-transition: $s ease-in-out
   -o-transition: $s ease-in-out
   transition: $s ease-in-out
+
+=responsive($xsfs, $smvw, $lgrem)
+  font-size: $xsfs
+  line-height: $xsfs
+  @media (min-width: $sm)
+    font-size: $smvw
+    line-height: $smvw
+    @media (min-width: $lg)
+      font-size: $lgrem
+      line-height: $lgrem

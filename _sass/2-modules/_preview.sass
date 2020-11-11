@@ -26,7 +26,9 @@
     transform: scale(1)
   &__actions
     position: absolute
-    top: 50%
+    top: 40%
+    @media (min-width: $lg)
+      top: 50%
     right: 0
     bottom: 0
     left: 0
@@ -37,13 +39,12 @@
     position: absolute
     top: 10px
     bottom: 10px
-    background-position: center 75%
-    background-repeat: no-repeat
-    width: calc(50% - 15px)
+    left: 10px
+    right: 10px
     box-shadow: 0 1px 40px 0 rgba(0, 0, 0, 0.15)ß
     opacity: 0
     text-align: center
-    font-size: 1.125rem
+    font-size: 2em
     line-height: 1.4
     color: white
     background-size: $icon-size
@@ -51,13 +52,13 @@
     padding-top: 5%
     transition: all 0.4s
     &--globe
-      left: 10px
-      background-image: url("../img/internet.svg")
+      max-height: 65px
     &--eye
       right: 10px
       background-image: url('../img/view.svg')
   &:hover
     .preview__action
       opacity: 1
-  &#web-preview
-    max-width: 700px
+
+  &.web-preview
+    max-width: 1000px
