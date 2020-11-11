@@ -681,7 +681,7 @@ body .HomePage {
   -moz-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  height: calc(100vh - 65px);
+  min-height: calc(100vh - 65px);
   width: 100vw;
   overflow: hidden;
   position: relative;
@@ -709,7 +709,7 @@ body .HomePage {
     -ms-flex-pack: center;
     justify-content: center;
     position: relative;
-    height: calc(50vh - (65px / 2)); }
+    min-height: calc(50vh - (65px / 2)); }
     body .HomePage-cell:hover .Block-textBlock {
       -webkit-transform: scale(1.5);
       transform: scale(1.5);
