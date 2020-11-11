@@ -5,8 +5,7 @@ body {
   padding: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-size: 1.5em;
-  background-color: #1e1f26;
-  margin-top: 65px; }
+  background-color: #1e1f26; }
   body .main-wrapper {
     overflow-x: hidden;
     width: 100vw;
