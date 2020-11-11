@@ -669,54 +669,6 @@ a.HomePage-cell.HomePage-Block1.hire {
       line-height: 50px;
       padding: 12px 0; }
 
-a.HomePage-cell.HomePage-Block1.hire.about h1 {
-  margin-top: -20px;
-  font-size: 6rem; }
-  @media (min-width: 950px) {
-    a.HomePage-cell.HomePage-Block1.hire.about h1 {
-      font-size: 8rem; } }
-a.HomePage-cell.HomePage-Block1.hire.about p {
-  margin-top: -40px;
-  font-size: 1.5rem;
-  color: white; }
-  @media (min-width: 950px) {
-    a.HomePage-cell.HomePage-Block1.hire.about p {
-      font-size: 1.5rem; } }
-
-.about--photo {
-  position: relative;
-  padding-top: 40px;
-  max-width: 300px;
-  margin: auto;
-  left: 0;
-  right: 0; }
-  @media (min-width: 950px) {
-    .about--photo {
-      position: absolute;
-      top: 50vh; } }
-  .about--photo_image {
-    max-width: 300px;
-    border: solid 3px white; }
-
-#about-content {
-  font-family: "VT323", monospace;
-  color: #9DB8D3;
-  font-size: 0.75em;
-  word-wrap: break-word;
-  line-height: 1.25em;
-  padding: 30px 30px 60px;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 400px; }
-  @media (min-width: 950px) {
-    #about-content {
-      padding-top: 225px;
-      font-size: 1em;
-      max-width: 700px; } }
-  #about-content h2 {
-    text-transform: uppercase;
-    font-family: "Roboto Condensed", sans-serif; }
-
 body a {
   text-decoration: none; }
 body .HomePage {
@@ -825,3 +777,51 @@ body .HomePage {
     .portfolio .portfolio-item.web {
       height: auto;
       color: white; }
+
+a.HomePage-cell.HomePage-Block1.hire.about h1 {
+  margin-top: -20px;
+  font-size: 5rem; }
+  @media (min-width: 950px) {
+    a.HomePage-cell.HomePage-Block1.hire.about h1 {
+      font-size: 8rem; } }
+a.HomePage-cell.HomePage-Block1.hire.about p {
+  margin-top: -40px;
+  font-size: 1rem;
+  color: white; }
+  @media (min-width: 950px) {
+    a.HomePage-cell.HomePage-Block1.hire.about p {
+      font-size: 1.5rem; } }
+
+.about--photo {
+  position: relative;
+  padding-top: 40px;
+  max-width: 300px;
+  margin: auto;
+  left: 0;
+  right: 0; }
+  @media (min-width: 950px) {
+    .about--photo {
+      position: absolute;
+      top: 50vh; } }
+  .about--photo_image {
+    max-width: 300px;
+    border: solid 3px white; }
+
+#about-content {
+  font-family: "VT323", monospace;
+  color: #9DB8D3;
+  font-size: 0.75em;
+  word-wrap: break-word;
+  line-height: 1.25em;
+  padding: 30px 30px 60px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 300px; }
+  @media (min-width: 950px) {
+    #about-content {
+      padding-top: 225px;
+      font-size: 1em;
+      max-width: 700px; } }
+  #about-content h2 {
+    text-transform: uppercase;
+    font-family: "Roboto Condensed", sans-serif; }
