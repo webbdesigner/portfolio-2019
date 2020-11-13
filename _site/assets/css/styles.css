@@ -707,7 +707,7 @@ body .HomePage {
   -moz-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  min-height: calc(100vh - 65px);
+  height: calc(100vh - 65px);
   width: 100vw;
   overflow: hidden;
   position: relative;
