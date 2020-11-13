@@ -1,5 +1,4 @@
 a.HomePage-cell.HomePage-Block1.hire.about
-
   h1
     font-size: 4.5rem
     @media (min-width: 950px)
@@ -20,7 +19,7 @@ a.HomePage-cell.HomePage-Block1.hire.about
   margin: auto
   left: 0
   right: 0
-  @media (min-width: 950px)
+  @media (min-width: 950px) and (min-height: 900px)
     position: absolute
     top: 50vh
   &_image
@@ -42,6 +41,8 @@ a.HomePage-cell.HomePage-Block1.hire.about
     padding-top: 225px
     font-size: 1em
     max-width: 700px
+  @media (max-height: 900px)
+    padding-top: 20px !important
   h2
     text-transform: uppercase
     font-family: "Roboto Condensed", sans-serif

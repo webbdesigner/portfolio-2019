@@ -1,6 +1,6 @@
 
 
-<div class="portfolio" id="{{ portfolio.thumbnail }}"">
+<div class="portfolio" id="{{ portfolio.thumbnail }}">
   {% for portfolio in site.categories.print %}
   <a class="portfolio-item" href="#{{ portfolio.thumbnail }}"  style="background-color: #{{ portfolio.color }} "> <!--aria-label="{{portfolio.title}} Details"-->
     <div class="portfolio-image" style="background-image: url( /assets/img/print/{{ portfolio.thumbnail }}.svg )">

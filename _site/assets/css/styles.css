@@ -839,7 +839,7 @@ a.HomePage-cell.HomePage-Block1.hire.about p {
   margin: auto;
   left: 0;
   right: 0; }
-  @media (min-width: 950px) {
+  @media (min-width: 950px) and (min-height: 900px) {
     .about--photo {
       position: absolute;
       top: 50vh; } }
@@ -863,6 +863,9 @@ a.HomePage-cell.HomePage-Block1.hire.about p {
       padding-top: 225px;
       font-size: 1em;
       max-width: 700px; } }
+  @media (max-height: 900px) {
+    #about-content {
+      padding-top: 20px !important; } }
   #about-content h2 {
     text-transform: uppercase;
     font-family: "Roboto Condensed", sans-serif; }
