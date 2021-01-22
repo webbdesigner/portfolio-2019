@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+<meta name="description" content="I'm Brandon Webb, a web designer from Greenville NC. I specialize in Branding, Brand identity, logo design, website design, UX design, web development, and email marketing">
+<title>Brand and Web Designs | The portfolio of Brandon Webb</title>
+<!-- FAVICON -->
+<link rel="apple-touch-icon" sizes="144x144" href="assets/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+<link rel="manifest" href="assets/favicon/site.webmanifest">
+<link rel="mask-icon" href="assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<!-- CSS -->
+<link href="/assets/css/styles.css" type="text/css" rel="stylesheet">
+  <!-- Font Awesome -->
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+</head>
+
+
+<body>
+  <div class="main-wrapper">
+
+<header>
+  <div class="header-wrap">
+    <!-- Logo -->
+    <a href="/index.html" class="logo">
+      <img src="/assets/img/logo.png"/ alt="logo">
+      <h1>Brand & Web Designs</h1>
+    </a>
+
+    <nav>
+      <!-- Hamburger -->
+      <button id="hamburger-icon" href="#" class="open-close-btn" aria-label="Site Navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Overlay Menu -->
+      <div id="myNav" class="overlay">
+        <div class="overlay-content">
+          <!--<p style="max-width: 550px; margin: auto">Brandon Webb is an Identity Designer, UX Designer, Web Designer & Front-end Developer in Eastern North Carolina, USA with over 10 years of experience.</p>-->
+          <ul>
+            <li><a href="/about.html">About Me</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <!--<li><a href="/blog.html">Blog</a></li>-->
+            <li><a href="/contact.html">Hire Me</a></li>
+            <li>
+              <ul class="list-inline">
+                <li><a target="_blank" rel="noopener" href="https://www.facebook.com/brandon.webb.7399" aria-label="Facebook Profile"><i class="fab fa-facebook fa-fw fa-3x"></i></a></li>
+                <li><a target="_blank" rel="noopener" href="https://twitter.com/webbdesigning" aria-label="Twitter Profile"><i class="fab fa-twitter fa-fw fa-3x"></i></a></li>
+                <li><a target="_blank" rel="noopener" href="https://www.instagram.com/webbdesigner3" aria-label="Instagram Profile"><i class="fab fa-instagram fa-fw fa-3x"></i></a></li>
+                <li><a target="_blank" rel="noopener" href="https://www.codepen.io/webbdesigner3" aria-label="Codepen Profile"><i class="fab fa-codepen fa-fw fa-3x"></i></a></li>
+                <li><a target="_blank" rel="noopener" href="https://github.com/webbdesigner" aria-label="Github Profile"><i class="fab fa-github fa-fw fa-3x"></i></a></li>
+              </ul>
+            </li>
+          </ul>
+          <p>© 2020 Copyright Brand and Web Designs. All rights reserved.
+          <br>This site is built with <a target="_blank" rel="noopener" href="https://jekyllrb.com/">Jekyll</a> and is hosted with <a rel="noopener" href="https://app.netlify.com/" target="_blank" >Netlify</a>. The source code is hosted on <a target="_blank" rel="noopener" href="https://github.com/webbdesigner/portfolio-2019">Github.</a></p>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+
+<section aria-label="Project: Great Wolf Tattoo">
+  <div class="portfolio-image" style="background-image: url(/assets/img/print/greatwolf )">
+  </div>
+</section>
+
+<section aria-label="Great Wolf Tattoo Project Context">
+  <h2>About The Project</h2>
+  <div class="portfolio-context">
+    <div class="brief">
+      <h3>Design Brief</h3>
+      <p></p>
+    </div>
+    <div class="challenges">
+      <h3>Challenges</h3>
+      <p></p>
+    </div>
+    <div class="goals">
+      <h3>Goals</h3>
+      <p></p>
+    </div>
+  </div>
+</section>
+
+<section aria-label="Great Wolf Tattoo Project Solution">
+  <div class="portfolio-solution">
+    <h2>Solution</h2>
+    <div class="concepts">
+      <h3>Concepts</h3>
+      <p></p>
+    </div>
+    <div class="color-fonts">
+      <h3>Color/Type</h3>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="final">
+      <div></div>
+    </div>
+  </div>
+</section>
+
+
+<footer></footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Navigation Javascript -->
+<script>
+/* Open Menu */
+$( ".open-close-btn" ).on('click touchstart', function(e) {
+  // prevent default anchor click
+  e.preventDefault();
+  $(".overlay").toggleClass("overlay-open");
+  $("#hamburger-icon").toggleClass("hamburger-open");
+});
+
+
+(function($) { "use strict";
+
+	$(document).ready(function(){"use strict";
+
+		//Scroll back to top
+
+		var progressPath = document.querySelector('.progress-wrap path');
+		var pathLength = progressPath.getTotalLength();
+		progressPath.style.transition = progressPath.style.WebkitTransition = 'none';
+		progressPath.style.strokeDasharray = pathLength + ' ' + pathLength;
+		progressPath.style.strokeDashoffset = pathLength;
+		progressPath.getBoundingClientRect();
+		progressPath.style.transition = progressPath.style.WebkitTransition = 'stroke-dashoffset 10ms linear';
+		var updateProgress = function () {
+			var scroll = $(window).scrollTop();
+			var height = $(document).height() - $(window).height();
+			var progress = pathLength - (scroll * pathLength / height);
+			progressPath.style.strokeDashoffset = progress;
+		}
+		updateProgress();
+		$(window).scroll(updateProgress);
+		var offset = 50;
+		var duration = 550;
+		jQuery(window).on('scroll', function() {
+			if (jQuery(this).scrollTop() > offset) {
+				jQuery('.progress-wrap').addClass('active-progress');
+			} else {
+				jQuery('.progress-wrap').removeClass('active-progress');
+			}
+		});
+		jQuery('.progress-wrap').on('click', function(event) {
+			event.preventDefault();
+			jQuery('html, body').animate({scrollTop: 0}, duration);
+			return false;
+		})
+
+
+	});
+
+})(jQuery);
+</script>
+
+  </div>
+</body>
