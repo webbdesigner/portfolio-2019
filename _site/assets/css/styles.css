@@ -450,7 +450,7 @@ header {
   .preview:hover .preview__action {
     opacity: 1; }
   .preview.web-preview {
-    max-width: 1000px; }
+    max-width: 700px; }
 
 .progress-wrap {
   position: fixed;
