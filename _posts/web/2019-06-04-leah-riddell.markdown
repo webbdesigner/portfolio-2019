@@ -8,4 +8,3 @@ thumbnail: leahriddell
 link: https://leahriddellcounseling.com/
 permalink: "/web/leahriddellcounseling"
 ---
-# hello world
