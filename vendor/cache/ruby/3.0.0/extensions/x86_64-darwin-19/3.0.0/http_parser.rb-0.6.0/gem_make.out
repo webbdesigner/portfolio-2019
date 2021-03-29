@@ -1,0 +1,16 @@
+current directory: /Users/brandonwebb/Documents/1-GitHub/portfolio-2019/vendor/cache/ruby/3.0.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/usr/local/opt/ruby/bin/ruby -I /usr/local/lib/ruby/site_ruby/3.0.0 -r ./siteconf20210329-24334-ixqzl.rb extconf.rb
+creating Makefile
+
+current directory: /Users/brandonwebb/Documents/1-GitHub/portfolio-2019/vendor/cache/ruby/3.0.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make DESTDIR\= clean
+
+current directory: /Users/brandonwebb/Documents/1-GitHub/portfolio-2019/vendor/cache/ruby/3.0.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make DESTDIR\=
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+current directory: /Users/brandonwebb/Documents/1-GitHub/portfolio-2019/vendor/cache/ruby/3.0.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20210329-24334-lowbwu
