@@ -27,7 +27,7 @@ body
       justify-content: center
       position: relative
       min-height: calc(50vh - (65px / 2))
-      &:hover
+      //&:hover
         .Block-textBlock
           -webkit-transform: scale(1.5)
           transform: scale(1.5)
@@ -42,9 +42,9 @@ body
         display: flex
         height: 100vh
     &-Block1
-      background-image: url("/assets/img/creative.jpg")
-      background-size: 100vw 50vh
-      @media (min-width: 950px)
-        background-size: 100vw 100vh
+      background-color: $cool-blue
+      background: repeating-radial-gradient(circle at bottom left, $colors), repeating-radial-gradient(circle at bottom right, $colors)
+      background-blend-mode: overlay
+
     &-Block2
       background-color: $coder-gray

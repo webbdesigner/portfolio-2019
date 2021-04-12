@@ -1,0 +1,203 @@
+hr
+  margin-top: 2em
+  margin-bottom: 2em
+  border: .1px solid $red2
+  max-width: 60ch
+  margin-left: 0
+
+.posts
+  grid-column: full
+  list-style: none
+  grid-column: $measure
+  max-width: 65ch
+  margin: 3em auto
+  .post-callout
+    color: #e2e2e2 !important
+    h2.long-title
+      margin-top: 0
+      a
+        color: #e2e2e2 !important
+        text-underline-offset: 3px
+        text-decoration-skip-ink: auto
+        text-decoration: underline
+        text-decoration-color: $cool-blue
+      :focus
+        outline: 2px dashed
+        outline-offset: 0.25rem
+      [href]:hover
+        text-decoration-color: $red2
+      @media(min-width: 75em)
+        font-size: 2.5em
+    .date
+      font-family: $primary
+      font-weight: 700
+      margin-bottom: .5em
+      color: $red2
+
+.post
+  margin-top: 120px
+  color: #e2e2e2
+  line-height: 1.5
+  font-family: $body
+  --flow-space: $s700
+  width: 75vw
+  width: clamp(16rem, 80vw, 70rem)
+  margin-left: auto
+  margin-right: auto
+  padding-left: 1.5rem
+  padding-right: 1.5rem
+  letter-spacing: .0125em
+  time
+    --flow-space: $s400
+    display: block
+    font-size: 1rem
+    color: $red2
+    margin-top: -35px
+    padding-bottom: 20px
+
+  h2, h3
+    --flow-space: $s900
+
+  h2 + *, h3 + *
+    --flow-space: $s400
+  a:not([class])
+    color: currentColor
+  a
+    text-underline-offset: 1px
+    text-decoration-skip-ink: auto
+    text-decoration: underline
+    text-decoration-color: $cool-blue
+  :focus
+    outline: 2px dashed
+    outline-offset: 0.25rem
+
+  [href]:hover
+    text-decoration-color: $red2
+
+  h1, h2, h3, h4
+    font-family: $primary
+    line-height: 1.3
+  h1, h2
+    font-weight: 900
+  h1
+    font-size: $s700
+  h2
+    font-size: $s600
+  h3
+    font-size: $s600
+  img
+    max-width: #{"min(55rem, 100%)"}
+
+  figcaption
+    font-size: $s300
+    font-style: italic
+    margin-top: 1rem
+
+  blockquote
+    padding-left: $s600
+    border-left: 5px solid
+    font-style: italic
+
+  .flow > * + *
+    margin-top: var(--flow-space, 1em)
+
+  p, li
+    max-width: 60ch
+
+  h1
+    max-width: 15ch
+
+  h2, h3
+    max-width: 25ch
+  li
+    padding-bottom: 1em
+    font-size: calc(100% - 0.125em)
+  @media (min-width: 45em)
+    h1
+      font-size: $s900
+    h2
+      font-size: $s700
+    p
+      font-size: $s500
+    figcaption
+      font-size: $s400
+    blockquote p
+      font-size: $s600
+      max-width: 40ch
+    time
+      font-size: $s600
+
+.post figure, .post figure + *
+  --flow-space: $s900
+main:focus
+  outline: none
+pre
+  font-family: $coder
+  clear: both
+  color: $white
+  background: $black
+  padding: 0
+  -moz-tab-size: 2
+  -o-tab-size: 2
+  tab-size: 2
+  -ms-word-break: normal
+  word-break: normal
+  -webkit-hyphens: none
+  -ms-hyphens: none
+  hyphens: none
+  position: relative
+  line-height: 28px
+  border-radius: 8px
+  min-width: 100px
+  width: -webkit-max-content
+  width: -moz-max-content
+  width: max-content
+  max-width: 100%
+  -webkit-box-shadow: $pre-shadow
+  -moz-box-shadow: $pre-shadow
+  box-shadow: $pre-shadow
+  code
+    background: 0 0
+    white-space: pre
+    -webkit-overflow-scrolling: touch
+    overflow-x: scroll
+    display: block
+    max-width: 100%
+    min-width: 100px
+    font-size: 16px
+    padding: 30px
+    line-height: 1.75
+
+.s1, .na
+  color: lighten($green2, 10%)
+.nt
+  color: $red2
+.o, .s
+  color: $cool-blue
+
+
+
+code::-webkit-scrollbar
+  height: 5px
+  top: -5px
+code::-webkit-scrollbar-thumb
+  background: $cool-blue
+code::-webkit-scrollbar-track
+  background: $black-blue-light
+
+pre.highlight
+  position: relative
+  &::after
+    position: absolute
+    content: "CSS"
+    font-size: 14px
+    top: 0
+    right: 0
+    background-color: $red2
+    padding: 0 15px
+    border-radius: 0 5px 0 5px
+    color: $white
+.html
+  pre.highlight
+    &::after
+      content: "HTML"

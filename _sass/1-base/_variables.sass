@@ -1,19 +1,31 @@
 @import url('https://fonts.googleapis.com/css?family=Ranchers|Roboto+Condensed|Share+Tech+Mono&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap')
+$creative: 'Suez One', serif
+$coder: monospace, Operator Mono SSm A, Operator Mono SSm B, Source Code Pro, Menlo, Consolas, Monaco
+$primary: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif
+$body: Georgia, serif
 
-// Fonts
-$creative: 'Ranchers', Arial, sans-serif
-$coder: 'VT323', monospace
-$primary: 'Roboto Condensed', sans-serif
+// sizes
+$s300: 0.75rem
+$s400: 1rem
+$s500: 1.33rem
+$s600: 1.77rem
+$s700: 2.36rem
+$s800: 3.15rem
+$s900: 4.2rem
 
 // Colors
 $cool-blue: #9DB8D3
 $red: #f2395a
+$red2: #d86b75
 $dark-gray: #1e1f26
 $coder-gray: #272c34
 $white: #ffffff
-
+$purple: #3e2e6a
+$blue: #130b52
 $yellow: #f8ab37
 $green: #2ecc71
+$green2: #99c27c
 $grey-light: #f2f7f9
 $grey: #ecedf3
 $black: #080808
@@ -22,6 +34,8 @@ $black-blue-light: #353746
 $black-blue-light-2: #404255
 $black-blue-light-3: #4b4d64
 $black-light: #424455
+
+$colors : #fedc00 0,#fedc00 1/18 * 100%,#fcb712 0,#fcb712 2/18 * 100%,#f7921e 0,#f7921e 3/18 * 100%,#e87f24 0,#e87f24 4/18 * 100%,#dd6227 0,#dd6227 5/18 * 100%,#dc4c27 0,#dc4c27 6/18 * 100%,#ca3435 0,#ca3435 7/18 * 100%,#b82841 0,#b82841 8/18 * 100%,#953751 0,#953751 9/18 * 100%,#364c88 0,#364c88 10/18 * 100%,#16599d 0,#16599d 11/18 * 100%,#02609e 0,#02609e 12/18 * 100%,#0073a9 0,#0073a9 13/18 * 100%,#008aa4 0,#008aa4 14/18 * 100%,#239a87 0,#239a87 15/18 * 100%,#7cba6d 0,#7cba6d 16/18 * 100%,#becc2f 0,#becc2f 17/18 * 100%,#e0d81d 0,#e0d81d 18/18 * 100%
 // Margin
 $margin: .5em
 $box-margin: $margin * 2
@@ -31,6 +45,20 @@ $sm: 768px
 $md: 1200px
 $lg: 1400px
 
-
+$pre-shadow: 0px 0px 7px 0px #353746
 // other
 $icon-size: 25%
+
+
+$grid-template-columns: [full-start] var(--margin-space) [margins-start] var(--margin-columns) [measure-start] 1fr [measure-end] var(--margin-columns) [margins-end] var(--margin-space) [full-end]
+$grid-template-2columns: [full-start] var(--margin-space) [margins-start col1-start] 1fr [col1-end col2-start] 1fr [margins-end col2-end] var(--margin-space) [full-end]
+$grid-template-3columns: [full-start] var(--margin-space) [margins-start col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [margins-end col3-end] var(--margin-space) [full-end]
+$subgrid-template-columns: [margins-start] var(--margin-columns) [measure-start] 1fr [measure-end] var(--margin-columns) [margins-end]
+$subgrid-template-2columns: [margins-start col1-start] 1fr [col1-end col2-start] 1fr [margins-end col2-end]
+$subgrid-template-3columns: [margins-start col1-start] 1fr [col1-end col2-start] 1fr [col2-end col3-start] 1fr [margins-end col3-end]
+$column-gap-default: 1rem
+$column-gap-default: 0.5rem
+$measure: 20em
+$space-around-measure: calc(50vw - max(var(--measure)))
+$margin-space: var(--space-around-measure)
+$margin-columns: 0

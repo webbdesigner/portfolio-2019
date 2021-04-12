@@ -1,0 +1,22 @@
+.fill-text
+  animation: fill 2.5s ease-in
+
+@media (prefers-reduced-motion: no-preference)
+  body
+    scroll-behavior: smooth
+
+  @keyframes fill
+    0%
+      color: rgba(255,255,255,0)
+      -webkit-text-stroke-color: rgba(255,255,255,0.8)
+      -webkit-text-stroke-width: -1px
+    100%
+      color: rgba(255,255,255,0.8)
+      -webkit-text-stroke-color: rgba(255,255,255,0)
+
+  @keyframes typing
+    from
+      width: 0
+  @keyframes caret
+    50%
+      border-right-color: transparent

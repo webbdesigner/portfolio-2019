@@ -1,0 +1,234 @@
+
+$neutralShade1: #f2f2f2
+$neutralShade2: #e8e9e9
+$neutralShade3: #d1d3d4
+$neutralShade4: #babdbf
+$neutralShade5: #808488
+$neutralShade6: #666a6d
+$neutralShade7: #4d5052
+$neutralShade8: #212122
+$grayColor: #999
+$lightGrayColor: #ddd
+$borderRadius: 6px
+$boxShadow: 0 2px 5px rgba(#333, 0.2)
+$canvasColor: #f9f9f9
+$backgroundColor: #fff
+$foregroundColor: #111
+$primaryColor: #03a9f4
+$primaryShade1: #e1f5fe
+$primaryShade2: #b3e5fc
+$primaryShade3: #4fc3f7
+$primaryShade4: #0288d1
+$primaryShade5: #0277bd
+$secondaryColor: #673ab7
+$secondaryShade1: #ede7f6
+$secondaryShade2: #d1c4e9
+$secondaryShade3: #9575cd
+$secondaryShade4: #512da8
+$secondaryShade5: #311b92
+$accentColor: #009688
+$accentShade1: #e0f2f1
+$accentShade2: #b2dfdb
+$accentShade3: #4db6ac
+$accentShade4: #00796b
+$accentShade5: #004d40
+$accent2Color: #8bc34a
+$accent2Shade1: #e7f6d5
+$accent2Shade2: #c5e1a5
+$accent2Shade3: #aed581
+$accent2Shade4: #689f38
+$accent2Shade5: #558b2f
+$accent3Color: #f44336
+$accent3Shade1: #ffdde0
+$accent3Shade2: #ffcdd2
+$accent3Shade3: #ef9a9a
+$accent3Shade4: #d32f2f
+$accent3Shade5: #b71c1c
+
+//typography
+$font-1: "Poppins", sans-serif
+$font-2: "Poppins", sans-serif
+
+.brand-elements > section
+  position: relative
+.brand-elements > section> h6
+  color: $accentColor
+  background: $canvasColor
+  position: absolute
+  top: -10px
+  left: 20px
+  padding: 0 10px
+  &.subheader
+    color: $grayColor
+    margin-top: 20px
+    margin-bottom: 20px
+    width: 100%
+
+.brand-elements
+  width: 90%
+  max-width: 1050px
+  margin: 3em auto 0
+  border: 1px solid $accentColor
+  display: grid
+  grid: repeat(5, fit-content(300px))/repeat(4, 1fr)
+  grid-template-areas: "colors typography typography typography" "colors buttons buttons links" "inputs inputs inputs inputs" "badges tooltips alerts alerts" "loading tooltips alerts alerts"
+  color: $foregroundColor
+  text-align: left
+  .colors
+    grid-area: colors
+    padding: 30px
+    border: 1px solid $accentColor
+    border-width: 0 1px 1px 0
+  .typography
+    grid-area: typography
+    border-bottom: 1px solid $accentColor
+
+  /*colors*/
+  .palette
+    display: grid
+    grid: 80px 45px min-content/repeat(5, minmax(50px, 1fr))
+    margin-bottom: 1em
+  .palette__main
+    grid-column: span 5
+  .palette h5
+    grid-column: span 5
+    text-align: left
+    padding: 10px 0
+  .palette.main div:nth-child(1)
+    background: $primaryColor
+  .palette.main div:nth-child(2)
+    background: $primaryShade1
+  .palette.main div:nth-child(3)
+    background: $primaryShade2
+  .palette.main div:nth-child(4)
+    background: $primaryShade3
+  .palette.main div:nth-child(5)
+    background: $primaryShade4
+  .palette.main div:nth-child(6)
+    background: $primaryShade5
+  .palette.secondary div:nth-child(1)
+    background: $secondaryColor
+  .palette.secondary div:nth-child(2)
+    background: $secondaryShade1
+  .palette.secondary div:nth-child(3)
+    background: $secondaryShade2
+  .palette.secondary div:nth-child(4)
+    background: $secondaryShade3
+  .palette.secondary div:nth-child(5)
+    background: $secondaryShade4
+  .palette.secondary div:nth-child(6)
+    background: $secondaryShade5
+  .palette.accent1 div:nth-child(1)
+    background: $accentColor
+  .palette.accent1 div:nth-child(2)
+    background: $accentShade1
+  .palette.accent1 div:nth-child(3)
+    background: $accentShade2
+  .palette.accent1 div:nth-child(4)
+    background: $accentShade3
+  .palette.accent1 div:nth-child(5)
+    background: $accentShade4
+  .palette.accent1 div:nth-child(6)
+    background: $accentShade5
+  .palette.accent2 div:nth-child(1)
+    background: $accent2Color
+  .palette.accent2 div:nth-child(2)
+    background: $accent2Shade1
+  .palette.accent2 div:nth-child(3)
+    background: $accent2Shade2
+  .palette.accent2 div:nth-child(4)
+    background: $accent2Shade3
+  .palette.accent2 div:nth-child(5)
+    background: $accent2Shade4
+  .palette.accent2 div:nth-child(6)
+    background: $accent2Shade5
+  .palette.accent3 div:nth-child(1)
+    background: $accent3Color
+  .palette.accent3 div:nth-child(2)
+    background: $accent3Shade1
+  .palette.accent3 div:nth-child(3)
+    background: $accent3Shade2
+  .palette.accent3 div:nth-child(4)
+    background: $accent3Shade3
+  .palette.accent3 div:nth-child(5)
+    background: $accent3Shade4
+  .palette.accent3 div:nth-child(6)
+    background: $accent3Shade5
+  .palette.neutrals
+    grid-template-rows: repeat(2, 50px) min-content
+    grid-template-columns: repeat(4, 1fr)
+  .palette.neutrals div:nth-child(1)
+    background: $neutralShade1
+  .palette.neutrals div:nth-child(2)
+    background: $neutralShade2
+  .palette.neutrals div:nth-child(3)
+    background: $neutralShade3
+  .palette.neutrals div:nth-child(4)
+    background: $neutralShade4
+  .palette.neutrals div:nth-child(5)
+    background: $neutralShade5
+    grid-row: 2
+  .palette.neutrals div:nth-child(6)
+    background: $neutralShade6
+    grid-row: 2
+  .palette.neutrals div:nth-child(7)
+    background: $neutralShade7
+    grid-row: 2
+  .palette.neutrals div:nth-child(8)
+    background: $neutralShade8
+    grid-row: 2
+
+  /*typography*/
+  strong
+    font-weight: 500
+  em
+    font-style: italic
+  h1
+    font: 700 48px/1.2 $font-1
+    margin-bottom: 10px
+  h2
+    font: 700 32px/1.2 $font-1
+    margin-bottom: 10px
+  h3
+    font: 700 24px/1.2 $font-1
+    margin-bottom: 10px
+  h4
+    font: 700 20px/1.2 $font-1
+    margin-bottom: 10px
+  h5
+    font: 500 18px/1.2 $font-1
+    margin-bottom: 10px
+  h6
+    font: 500 16px/1.2 $font-1
+    text-transform: uppercase
+  .font-family
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  .font-family > div
+    flex: 1 1 30%
+    padding: 30px 30px 0
+    min-width: 10em
+  .font-family-medium > *
+    font-weight: 500
+  .font-family-light > *
+    font-weight: 300
+  .font-example
+    display: flex
+    flex-wrap: wrap
+  .font-example > div
+    flex: 1 1 45%
+    padding: 30px
+    min-width: 16em
+  .font-example p
+    margin-bottom: 15px
+  @media (max-width: 992px)
+    grid: repeat(9, fit-content(300px))/100%
+    grid-template-areas: "colors" "typography"
+    section:not(:last-child)
+      border: 1px solid $accentColor
+      border-width: 0 0 1px
+    section:last-child
+      border-width: 0
+    .typography
+      padding-bottom: 40px

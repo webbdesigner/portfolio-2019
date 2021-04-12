@@ -1,26 +1,22 @@
 .creative
   font-family: $creative
-  font-size: 15vw
+  font-size: 3rem
   line-height: 4.5rem
   @media (min-width: 950px)
-    font-size: 6rem
-  text-transform: uppercase
-  color: $red
-  +shadow()
-  +skew()
-  letter-spacing: .25rem
+    font-size: 5.5rem
+  color: $white
+  letter-spacing: .5rem
+  -webkit-text-stroke-width: 1px
+
 .coder
-  font-size: 4rem
+  font-size: 3rem
+  @media (min-width: 950px)
+    font-size: 5rem
   font-family: $coder
   color: $cool-blue
   white-space: nowrap
   overflow: hidden
   border-right: .1em solid
-  width: 6ch
-  animation: typing 2s steps(6), caret 1s steps(1) infinite
-@keyframes typing
-  from
-    width: 0
-@keyframes caret
-  50%
-    border-right-color: transparent
+  width: 10ch
+  letter-spacing: -3px
+  animation: typing 2s steps(11), caret 1s steps(1) infinite

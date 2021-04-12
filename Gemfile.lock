@@ -67,14 +67,15 @@ GEM
     webrick (1.7.0)
 
 PLATFORMS
-  ruby
+  x86_64-darwin-19
 
 DEPENDENCIES
   jekyll (~> 4.2.0)
   jekyll-feed (~> 0.6)
+  kramdown-parser-gfm
   minima (~> 2.0)
   tzinfo-data
   webrick (~> 1.7)
 
 BUNDLED WITH
-   1.17.2
+   2.2.15
