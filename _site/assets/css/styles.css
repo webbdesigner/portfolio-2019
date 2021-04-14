@@ -6,9 +6,9 @@ body { scrollbar-color: #201c29 #9DB8D3; text-rendering: optimizeSpeed; margin: 
 
 ::selection { color: #1e1f26; background: #9DB8D3; }
 
-.creative { font-family: "Suez One", serif; font-size: 3rem; line-height: 4.5rem; color: #ffffff; letter-spacing: .5rem; -webkit-text-stroke-width: 1px; }
+.creative { font-family: "Suez One", serif; font-size: 3rem; line-height: 4.5rem; letter-spacing: .25rem; color: #ffffff; -webkit-text-stroke-width: 1px; }
 
-@media (min-width: 950px) { .creative { font-size: 5.5rem; } }
+@media (min-width: 950px) { .creative { font-size: 5.5rem; letter-spacing: .5rem; } }
 
 .coder { font-size: 3rem; font-family: monospace, Operator Mono SSm A, Operator Mono SSm B, Source Code Pro, Menlo, Consolas, Monaco; color: #9DB8D3; white-space: nowrap; overflow: hidden; border-right: .1em solid; width: 10ch; letter-spacing: -3px; animation: typing 2s steps(11), caret 1s steps(1) infinite; }
 
@@ -48,7 +48,7 @@ header .header-wrap nav .overlay a { padding: 8px; text-decoration: none; font-s
 
 header .header-wrap nav .overlay a:hover, header .header-wrap nav .overlay a:focus { color: #ccc; }
 
-header .header-wrap nav .overlay p { padding: 2% 0; color: #888; font-size: .9rem; line-height: 1.5rem; }
+header .header-wrap nav .overlay p { padding: 5%; color: #888; font-size: .9rem; line-height: 1.5rem; }
 
 header .header-wrap nav .overlay p a { color: #9DB8D3; font-size: .9rem; border-bottom: 0.15em solid #9DB8D3; display: initial; padding: 0; text-transform: none; }
 
@@ -298,6 +298,8 @@ pre.highlight::after { position: absolute; content: "CSS"; font-size: 14px; top:
 
 .html pre.highlight::after { content: "HTML"; }
 
+ul.posts.summaries { padding-inline-start: 0; padding: 0 5%; }
+
 .brand-elements > section { position: relative; }
 
 .brand-elements > section > h6 { color: #009688; background: #f9f9f9; position: absolute; top: -10px; left: 20px; padding: 0 10px; }
@@ -430,13 +432,11 @@ a.HomePage-cell.HomePage-Block1.hire { background-size: 100vw 60vh; height: 60vh
 
 @media (min-width: 950px) { a.HomePage-cell.HomePage-Block1.hire { line-height: 8rem; } }
 
-a.HomePage-cell.HomePage-Block1.hire h2 { font-size: 6.5rem; }
+a.HomePage-cell.HomePage-Block1.hire h2 { line-height: 6rem; font-size: 6.5rem; }
 
 @media (min-width: 950px) { a.HomePage-cell.HomePage-Block1.hire h2 { font-size: 10rem; } }
 
-a.HomePage-cell.HomePage-Block1.hire p { color: white; }
-
-@media (min-width: 950px) { a.HomePage-cell.HomePage-Block1.hire p { line-height: 1rem; } }
+a.HomePage-cell.HomePage-Block1.hire p { line-height: 1.5; color: white; }
 
 .form-col { width: 100%; max-width: 600px; margin: 0 auto; }
 
@@ -460,7 +460,7 @@ a.HomePage-cell.HomePage-Block1.hire p { color: white; }
 
 .form-col .form .email { width: 100%; }
 
-.form-col .form .message { resize: none; padding: 12px; height: 77px; width: 100%; border: none; background-color: transparent; font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif; letter-spacing: 1px; color: #9DB8D3; background-image: -moz-linear-gradient(top, transparent, transparent 49px, #e7eff8 0px); background-image: -webkit-linear-gradient(top, transparent, transparent 49px, #e7eff8 0); -webkit-background-size: 100% 50px; background-size: 100% 50px; line-height: 50px; padding: 12px 0; }
+.form-col .form .message { resize: none; width: 100%; border: none; background-color: transparent; font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif; letter-spacing: 1px; color: #9DB8D3; -webkit-background-size: 100% 50px; background-size: 100% 50px; padding: 10px 10px; height: auto; border-bottom: 1px solid #9DB8D3; }
 
 body a { text-decoration: none; }
 
@@ -502,9 +502,9 @@ body .HomePage-Block2 { background-color: #272c34; }
 
 .portfolio .portfolio-item.web:last-child { padding-bottom: 100px; }
 
-a.HomePage-cell.HomePage-Block1.hire.about h1 { font-size: 4.5rem; }
+a.HomePage-cell.HomePage-Block1.hire.about h1 { font-size: 4.5rem; letter-spacing: 0.01em; }
 
-@media (min-width: 950px) { a.HomePage-cell.HomePage-Block1.hire.about h1 { font-size: 8rem; line-height: 8rem; } }
+@media (min-width: 950px) { a.HomePage-cell.HomePage-Block1.hire.about h1 { font-size: 8rem; line-height: 8rem; letter-spacing: 0.1em; } }
 
 a.HomePage-cell.HomePage-Block1.hire.about p { font-size: 1.33rem; margin-top: 1em; color: white; }
 
