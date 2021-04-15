@@ -4,6 +4,10 @@
 
 body { scrollbar-color: #201c29 #9DB8D3; text-rendering: optimizeSpeed; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, helvetica neue, helvetica, Ubuntu, roboto, noto, segoe ui, arial, sans-serif; font-size: 1.5em; background-color: #1e1f26; overflow-x: hidden; width: 100vw; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
+.skip-link { background: #201c29; color: #fff; font-weight: 700; left: 50%; padding: 4px; position: absolute; transform: translateY(-100%); }
+
+.skip-link:focus-within { transform: translateY(0%); }
+
 ::selection { color: #1e1f26; background: #9DB8D3; }
 
 .creative { font-family: "Suez One", serif; font-size: 3rem; line-height: 4.5rem; letter-spacing: .25rem; color: #ffffff; -webkit-text-stroke-width: 1px; }
@@ -504,13 +508,15 @@ body .HomePage-Block2 { background-color: #272c34; }
 
 .portfolio .portfolio-item.web:last-child { padding-bottom: 100px; }
 
-a.HomePage-cell.HomePage-Block1.hire.about h1 { font-size: 4.5rem; letter-spacing: 0.01em; }
+.HomePage-cell.HomePage-Block1.hire.about { max-height: 70vh; }
 
-@media (min-width: 950px) { a.HomePage-cell.HomePage-Block1.hire.about h1 { font-size: 8rem; line-height: 8rem; letter-spacing: 0.1em; } }
+.HomePage-cell.HomePage-Block1.hire.about h1 { font-size: 4.5rem; letter-spacing: 0.01em; }
 
-a.HomePage-cell.HomePage-Block1.hire.about p { font-size: 1.33rem; margin-top: 1em; color: white; }
+@media (min-width: 950px) { .HomePage-cell.HomePage-Block1.hire.about h1 { font-size: 8rem; line-height: 8rem; letter-spacing: 0.1em; } }
 
-@media (min-width: 950px) { a.HomePage-cell.HomePage-Block1.hire.about p { margin-top: -40px; font-size: 1.5rem; } }
+.HomePage-cell.HomePage-Block1.hire.about p { font-size: 1.33rem; margin-top: 1em; color: white; }
+
+@media (min-width: 950px) { .HomePage-cell.HomePage-Block1.hire.about p { margin-top: -40px; font-size: 1.5rem; } }
 
 .about--photo { position: relative; padding-top: 40px; max-width: 300px; margin: auto; left: 0; right: 0; }
 
