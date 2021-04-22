@@ -16,13 +16,15 @@ body
   box-sizing: border-box
 
 .skip-link
-  background: #201c29
-  color: #fff
-  font-weight: 700
-  left: 50%
-  padding: 4px
   position: absolute
-  transform: translateY(-100%)
+  width: 1px
+  height: 1px
+  padding: 0
+  margin: -1px
+  overflow: hidden
+  clip: rect(0,0,0,0)
+  white-space: nowrap
+  border: 0
   &:focus-within
     transform: translateY(0%)
 
