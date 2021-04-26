@@ -56,7 +56,7 @@ Like SEO, the copy (or page text) on your website affects the efficiency of the 
 
 Web font files can be a huge contributor to carbon emissions on the web. A single font file could weigh as much as 275kb! You can add another 250kb if you want it in bold. System fonts such as Times New Roman and Arial might not be as pretty, but they are already on the user’s device and don’t need any additional loading from the server.
 
-> “Good design is as little design as possible.”
+> “Good design is as little design as possible.”    
 — Dieter Rams
 
 ### Use [Dark mode](https://css-tricks.com/a-complete-guide-to-dark-mode-on-the-web/) when you can

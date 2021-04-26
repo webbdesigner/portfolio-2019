@@ -218,7 +218,7 @@ body.light .progress-wrap svg.progress-circle path { stroke: #1f2029; }
 
 .imgset.is-loaded .imgset__background { opacity: 1; }
 
-hr { margin-top: 2em; margin-bottom: 2em; border: 0.1px solid #d86b75; max-width: 60ch; margin-left: 0; }
+hr { margin-top: 2em; margin-bottom: 2em; border: none; border-bottom: 0.1px solid #d86b75; max-width: 60ch; margin-left: 0; }
 
 .posts { grid-column: full; list-style: none; grid-column: 20em; max-width: 65ch; margin: 3em auto; }
 
